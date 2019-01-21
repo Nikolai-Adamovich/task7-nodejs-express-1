@@ -2,6 +2,7 @@
   "name": "task7-nodejs-express-1",
   "version": "0.0.1",
   "private": true,
+  "main": "app.js",
   "scripts": {
     "start": "webpack --mode production && NODE_ENV=production PORT=80 node ./bin/www",
     "dev": "webpack --mode development && NODE_ENV=development PORT=8080 node ./bin/www"
