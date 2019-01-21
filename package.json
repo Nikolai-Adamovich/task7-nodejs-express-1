@@ -4,13 +4,14 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "webpack --mode production && NODE_ENV=production PORT=80 node ./bin/www",
-    "dev": "webpack --mode development && NODE_ENV=development PORT=8080 node ./bin/www"
+    "start": "webpack --mode production && cross-env NODE_ENV=production PORT=80 node ./bin/www",
+    "dev": "webpack --mode development && cross-env NODE_ENV=development PORT=8080 node ./bin/www"
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "compression": "^1.7.3",
     "cookie-parser": "~1.4.3",
+    "cross-env": "^5.2.0",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
