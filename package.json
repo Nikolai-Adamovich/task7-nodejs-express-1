@@ -4,7 +4,7 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "heroku-prebuild": "npm i -D",
+    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; npm i -D",
     "start": "webpack --mode production && cross-env NODE_ENV=production PORT=80 node ./bin/www",
     "dev": "webpack --mode development && cross-env NODE_ENV=development PORT=8080 node ./bin/www"
   },
